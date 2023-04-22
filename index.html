@@ -1,0 +1,47 @@
+<DOCTYPE html>
+<html>
+  <body>
+    <h1>Body</h1>
+    <div id="armWrapper">
+      <img src="repview.jfif">
+    </div>
+    <button id="buttonRO">RO</button>
+    <button id="buttonEN">EN</button>
+  </body>
+</html>
+<style>
+  h1 {
+  text-align: center;
+  font-size: 40px;
+  color: red;
+  text-decoration: underline;
+}
+  #armWrapper {
+  display: flex;
+  justify-content: center;
+}
+  body {
+  background-color: green;
+}
+  button {
+    height: 50px;
+    font-size: 20px;
+    width: fit-content;
+    padding: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 10px;
+    margin-top: 15px;
+  }
+</style>
+<script>
+  const imagine = document.getElementById('armWrapper');
+  const buttonRO = document.getElementById('buttonRO');
+  const buttonEN = document.getElementById('buttonEN');
+
+  buttonRO.addEventListener('click', (event) => {
+    imagine.innerHTML = '<img src="6934366_orig.jpg" style="transform: scale(1.2); margin-top: 30px;">';
+  });
+  buttonEN.addEventListener('click', (event) => {
+    imagine.innerHTML = '<img src="repview.jfif">';
+  });
+</script>
